@@ -1,0 +1,32 @@
+After creating tanks:
+
+Tank 1(3289 kg)
+Tank 2(2527 kg)
+Tank 3(3344 kg)
+The current tank is 3
+
+After adding pumps:
+
+Tank 3(3344 kg)
+ => pump 2(To tank 1)
+ => pump 1(To tank 2)
+Tank 1(3289 kg)
+ => pump 2(To tank 2)
+ => pump 1(To tank 2)
+Tank 2(2527 kg)
+ => pump 2(To tank 1)
+ => pump 1(To tank 1)
+The current tank is 2
+
+Dumping Concorde (after using assignment operator):
+
+Tank 3(3344 kg)
+ => pump 2(To tank 1)
+ => pump 1(To tank 2)
+Tank 1(3289 kg)
+ => pump 2(To tank 2)
+ => pump 1(To tank 2)
+Tank 2(2527 kg)
+ => pump 2(To tank 1)
+ => pump 1(To tank 1)
+The current tank is 2
