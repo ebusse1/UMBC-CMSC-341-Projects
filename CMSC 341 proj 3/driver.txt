@@ -1,0 +1,53 @@
+Creating 10 shops and adding them to the system:
+Shop Priority: 19
+Shop 19: => ((2:717842)1:543713((8:981168)2:445354(10:860958)))
+Shop Priority: 14
+Shop 14: => (((10:904337)2:399742((8:633661)6:205596))1:208446)
+Shop Priority: 25
+Shop 25: => ((2:852107)1:810913((4:895722)2:240297(10:378386)))
+Shop Priority: 10
+Shop 10: => (((6:280464)1:980681(4:345157))1:203953(8:940037))
+Shop Priority: 27
+Shop 27: => ((6:525506)1:631579((6:619532)1:675884(8:922617)))
+Shop Priority: 26
+Shop 26: => ((((4:424809)2:845317)2:312660)1:649839(8:703826))
+Shop Priority: 27
+Shop 27: => ((((10:574566)10:500116)6:570071(10:374446))6:444474)
+Shop Priority: 18
+Shop 18: => ((8:161215)2:363511((8:792061)2:805919(10:313646)))
+Shop Priority: 19
+Shop 19: => (((8:856365)4:491712)2:763642((6:861154)2:885055))
+Shop Priority: 10
+Shop 10: => ((((10:655834)10:953797)8:304894)1:673724(6:128179))
+
+Checking the tree of shops:
+((((19)18(19))10((27)14))10((26)25(27)))
+
+Get the highest priority shop:
+
+Shop 10: => (((6:280464)1:980681(4:345157))1:203953(8:940037))
+
+Get the 3rd highest priority shop:
+
+Shop 18: => ((8:161215)2:363511((8:792061)2:805919(10:313646)))
+
+Checking the tree of shops:
+
+((((27)19)14(27))10((26)19(25)))
+Changing the priority function in the highest priority shop:
+
+Get the highest priority shop, it must be a max heap now:
+
+Shop 10: => ((((797:304894)1456:673724(1161:128179))1683:953797)3416:655834)
+
+Get the highest priority shop, this one be a min heap:
+
+Shop 14: => (((10:904337)2:399742((8:633661)6:205596))1:208446)
+
+Preorder traversal of the nodes in the highest priority shop:
+Contents of the queue:
+[1] Order ID: 208446, item: Coffee, count: 2
+[2] Order ID: 399742, item: Latte, count: 1
+[10] Order ID: 904337, item: Iced Tea, count: 2
+[6] Order ID: 205596, item: Milk, count: 2
+[8] Order ID: 633661, item: Water, count: 12

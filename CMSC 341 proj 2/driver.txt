@@ -1,0 +1,70 @@
+Dump after inserting 10 nodes:
+
+((((19224:0)19289:1(19372:0))20201:2((26241:0)27904:1))47597:3((53002:0)60496:1(93209:0)))
+
+List of Tigers after inserting 10 nodes:
+
+19224:CUB:MALE:ALIVE
+19289:YOUNG:FEMALE:ALIVE
+19372:CUB:MALE:ALIVE
+20201:CUB:MALE:ALIVE
+26241:YOUNG:FEMALE:ALIVE
+27904:CUB:MALE:ALIVE
+47597:YOUNG:FEMALE:ALIVE
+53002:YOUNG:FEMALE:ALIVE
+60496:YOUNG:FEMALE:ALIVE
+93209:YOUNG:FEMALE:ALIVE
+
+Dump after removig the node with ID: 27904
+
+((((19224:0)19289:1(19372:0))20201:2(26241:0))47597:3((53002:0)60496:1(93209:0)))
+
+List of Tigers after removing the node with ID: 27904
+
+19224:CUB:MALE:ALIVE
+19289:YOUNG:FEMALE:ALIVE
+19372:CUB:MALE:ALIVE
+20201:CUB:MALE:ALIVE
+26241:YOUNG:FEMALE:ALIVE
+47597:YOUNG:FEMALE:ALIVE
+53002:YOUNG:FEMALE:ALIVE
+60496:YOUNG:FEMALE:ALIVE
+93209:YOUNG:FEMALE:ALIVE
+
+Creating a grid ...
+
+Dump of the grid:
+
+(22301(35550(38749((43342((46184((61595)63604))72664))86278(91587)))))
+
+
+        /*
+        //Now add more streaks to test splay
+        for (int i=0; i<50; i++){
+            Tiger tigers[10];
+            int streakSize = 10;
+            //int ID = 0;
+            for(int i=0;i<streakSize;i++){
+                Tiger tiger(idGen.getRandNum(),
+                            static_cast<AGE>(ageGen.getRandNum()),
+                            static_cast<GENDER>(genderGen.getRandNum()),
+                            static_cast<STATE>(stateGen.getRandNum()));
+                            tigers[i] = tiger;
+            }
+            
+            //Insert the tigers into the grid
+            aGrid.insert(idGen.getRandNum(), tigers, 10);
+        }
+        
+        //Count the number of dead, should be 25.
+        int result = aGrid.count(finalID, DEAD);
+        
+        //Test result is valid
+        if(result != 25){cout << "invalid result " << result << endl; return false;}
+        
+        //Test splay occured
+        if(aGrid.m_root->m_gridID != finalID){cout << "invalid splay" << endl; return false;}
+        
+        //Test BST preserved
+        if(!checkBST(aGrid.m_root)){return false;}
+        */
